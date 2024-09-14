@@ -493,7 +493,7 @@ body.dark-theme {
 }
 
 .featured__button:hover {
-  background-color: whitesmoke;
+  background-color: rgba(222, 212, 212, 0.703);
   color: var(--first-color);
 }
 
@@ -509,7 +509,6 @@ body.dark-theme {
 
 .featured__card:hover {
   box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
-  padding: 2rem 0 3rem 0;
 }
 
 .featured__card:hover .featured__button {
@@ -590,11 +589,20 @@ body.dark-theme {
 
 .products__card {
   position: relative;
-  background-color: var(--container-color);
+  background-color: rgba(245, 245, 245, 0.745);
   padding: 1.25rem 0;
   border: 1px solid var(--border-color);
   text-align: center;
   transition: .3s;
+}
+
+.dark-theme .products__card {
+  background-color: hsl(0, 0%, 16%);
+  border: 1px solid hsl(0, 0%, 20%);
+}
+
+.products__card:hover {
+  box-shadow: 0 8px 32px hsla(0, 0%, 10%, .1);
 }
 
 .products__img {
@@ -617,6 +625,10 @@ body.dark-theme {
   color: var(--first-color);
 }
 
+.dark-theme .products__price {
+  color: rgb(19 221 19);
+}
+
 .products__button {
   background-color: var(--button-color);
   padding: .4rem;
@@ -626,10 +638,26 @@ body.dark-theme {
   right: 0;
   bottom: 0;
   transition: .3s;
+  width: 30%;
 }
 
 .products__button:hover {
-  background-color: var(--button-color-alt);
+  background-color: whitesmoke;
+  color: var(--button-color);
+  border: 1px solid var(--button-color);
+}
+
+.dark-theme .products__button {
+  background-color: green;
+  border: 1px solid green;
+  color: #ffffff;
+  transition: .3s;
+}
+
+.dark-theme .products__button:hover {
+  background-color: whitesmoke;
+  color: green;
+  border: 1px solid rgb(22, 201, 22);
 }
 
 .products__card:hover {
@@ -796,10 +824,13 @@ body.dark-theme {
   opacity: 0;
 }
 
+.new__button:hover {
+  background-color: var(--button-color-alt);
+}
+
 .new__card:hover {
-  background-color: var(--first-color);
   box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
-  padding: 2rem 0 3rem 0;
+  padding-bottom: 1px;
 }
 
 .new__card:hover .new__tag {
@@ -818,6 +849,37 @@ body.dark-theme {
 .new__card:hover .new__price {
   color: hsl(0, 0%, 15%);
   margin-bottom: var(--mb-1-5);
+}
+
+.dark-theme .new__price {
+  color: rgb(9, 184, 9);
+}
+
+.dark-theme .new__button {
+  background-color: green;
+  color: #ffffff;
+}
+
+.dark-theme .new__button:hover {
+  background-color: whitesmoke;
+  color: green;
+}
+
+.dark-theme .new__button:hover:focus {
+  background-color: whitesmoke;
+  color: green;
+}
+
+.dark-theme .new__card:hover .new__tag {
+  background-color: rgb(6, 57, 6);
+}
+
+.dark-theme .new__card:hover .new__title {
+  color: white;
+}
+
+.dark-theme .new__card:hover .new__price {
+  color: rgb(0, 255, 0);
 }
 
 /*=============== NEWSLETTER ===============*/
